@@ -60,17 +60,17 @@ col1.header('Specify Input Parameters')
 def user_input_features():
         
     Percent_CK = col1.slider('Percent_CK', min_value =13 , max_value = 70, value = 35, step= 1)
-    CC_Muscovite = col1.slider('CC_Muscovite', X.CC_Muscovite.min(), X.CC_Muscovite.max(), X.CC_Muscovite.mean(), step= 1.00)
-    VMD = col1.slider('VMD', X.VMD.min(), X.VMD.max(), X.VMD.mean(), step= 1.00)
-    CC_Quartz = col1.slider('CC Quartz', X.CC_Quartz.min(), X.CC_Quartz.max(), X.CC_Quartz.mean(), step= 1.00)
-    CC_Anorthite = col1.slider('CC_Anorthite', X.CC_Anorthite.min(), X.CC_Anorthite.max(), X.CC_Anorthite.mean(), step= 1.00)
-    CC_Anorthoclase = col1.slider('CC_Anorthoclase', X.CC_Anorthoclase.min(), X.CC_Anorthoclase.max(), X.CC_Anorthoclase.mean(), step= 1.00)
-    CC_Hematite = col1.slider('CC_Hematite', X.CC_Hematite.min(), X.CC_Hematite.max(), X.CC_Hematite.mean(), step= 1.00)
-    CC_Magnetite = col1.slider('CC_Magnetite', X.CC_Magnetite.min(), X.CC_Magnetite.max(), X.CC_Magnetite.mean(), step= 1.00)
-    CC_Microcline = col1.slider('CC_Microcline', X.CC_Microcline.min(), X.CC_Microcline.max(), X.CC_Microcline.mean(), step= 1.00)
+    CC_Muscovite = col1.slider('CC_Muscovite',min_value =0 , max_value = 20, value = 4, step= 1)
+    VMD = col1.slider('VMD', min_value =5 , max_value = 20, value = 16, step= 1)
+    CC_Quartz = col1.slider('CC Quartz', min_value =1 , max_value = 55, value = 17, step= 1)
+    CC_Anorthite = col1.slider('CC_Anorthite', min_value =0 , max_value = 13, value = 2, step= 1)
+    CC_Anorthoclase = col1.slider('CC_Anorthoclase', min_value =0 , max_value = 4, value = 1, step= 1)
+    CC_Hematite = col1.slider('CC_Hematite', min_value =0 , max_value = 8, value = 4, step= 1)
+    CC_Magnetite = col1.slider('CC_Magnetite', min_value =0.00 , max_value = 1.40, value = 0.50, step= 0.10)
+    CC_Microcline = col1.slider('CC_Microcline',min_value =0.0 , max_value = 5.0, value = 1.4, step= 0.2)
     
     
-    CC_Amorphous = col1.slider('CC_Amorphous', X.CC_Amorphous.min(), X.CC_Amorphous.max(), X.CC_Amorphous.mean(), step= 1.00)
+    CC_Amorphous = col1.slider('CC_Amorphous', min_value =40 , max_value = 90, value = 66, step= 2)
     
     data = {'CC_Quartz': CC_Quartz,
             'CC_Hematite': CC_Hematite,
