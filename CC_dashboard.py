@@ -309,7 +309,7 @@ fig8.update_traces(contours_z=dict(show=True, usecolormap=True,
 camera = dict(
     up=dict(x=0, y=0, z=1),
     center=dict(x=0, y=0, z=0),
-    eye=dict(x=1.25, y=2.5, z=1.25)
+    eye=dict(x=1.25, y=2, z=1.25)
 )
 
 fig8.update_layout(scene_camera=camera)    
