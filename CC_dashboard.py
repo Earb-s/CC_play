@@ -317,7 +317,7 @@ fig8.update_layout(scene = dict(
                     xaxis_title='VMD',
                     yaxis_title='CC_Anorthite',
                     zaxis_title='predict_1DS'),
-                    width=400,height=350,
+                    width=450,height=450,
                     margin=dict(r=5, b=0, l=0, t=0))
 
 col7.write(fig8)
